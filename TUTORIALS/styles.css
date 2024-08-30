@@ -1,0 +1,45 @@
+body {
+    background-image: url('boat.jpg');
+    margin: 3%;
+    border: 2px dotted black;
+}
+
+a:hover,
+a:active {
+    background-color: yellow;
+}
+
+ol {
+    list-style-type: lower-alpha;
+}
+
+ul {
+    list-style-type: square;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    background-color: red;
+    font-style: italic;
+}
+
+table {
+    border-left: 2px dashed black;
+    border-right: 2px dashed black;
+    border-top: 4px double black;
+    border-bottom: 4px double black;
+}
+
+.style1 {
+    color: blue;
+    text-align: right;
+    text-decoration: underline;
+    font-style: italic;
+    word-spacing: 2cm;
+}
+
+.style2 {
+    background-color: yellow;
+    border: 2px dashed blue;
+    padding: 1.5cm;
+}
