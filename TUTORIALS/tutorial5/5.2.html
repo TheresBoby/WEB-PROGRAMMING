@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Palindrome Checker</title>
+    <script>
+        function checkPalindrome() {
+            let num;
+            let isPali = false;
+
+            do {
+                num = prompt("Enter a five-digit integer:");
+                if (num.length !== 5 || isNaN(num)) {
+                    alert("not a five digit number,try again pls");
+                    continue;
+                }
+
+                let reverse = num.split('').reverse().join('');
+                isPali = (num === reverse);
+
+                if (isPali) {
+                    alert(num + " is a palindrome");
+                } else {
+                    alert(num + " is not a palindrome");
+                }
+            } while (num.length !== 5 || isNaN(num));
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="checkPalindrome()">Check Palindrome</button>
+</body>
+
+</html>
